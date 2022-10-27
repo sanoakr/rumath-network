@@ -1,14 +1,9 @@
 # HTTP thread server program
 import socket
-import sys
 import threading
-
-args = sys.argv
-argc = len(args)
 
 port = 50007
 file = "server.html"
-
 
 def httpResponse(connection, address):
     with connection:
@@ -16,7 +11,7 @@ def httpResponse(connection, address):
         data = b""
         while True:
             data += connection.recv(1024)
-            if b"\r\n\r\n" in data:
+            if b"\n\n" or b"\n\r\n\r" in data:
                 break
         print("Received:", data.decode(), end="")  # 改行しない
 
@@ -40,12 +35,6 @@ def httpResponse(connection, address):
 
 
 if __name__ == "__main__":
-    if argc > 2:
-        print("Usage:", args[0], "[port]")
-        exit()
-    elif argc > 1:
-        port = int(args[1])
-
     HOST = ""  # サーバホスト名（'' とすると実行マシン上の接続可能な全てのホスト名）
     print("port=", port, ", file=", file)
 
