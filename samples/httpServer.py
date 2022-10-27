@@ -1,27 +1,18 @@
 # HTTP server program
 import socket
-import sys
 
-args = sys.argv
-argc = len(args)
-
-port = 50007
+port = 50080
 file = "server.html"
-cType = b"Content-Type: text/html; charset=utf-8\r\n\r\n"
+cType = b"Content-Type: text/html; charset=utf-8\n\n"
 htHead = b"<html><body>"
 htTail = b"</html></body>"
-
-if argc > 2:
-    print("Usage:", args[0], "[port]")
-    exit()
-elif argc > 1:
-    port = int(args[1])
-
-HOST = ""  # サーバホスト名（'' とすると実行マシン上の接続可能な全てのホスト名）
-print("port=", port, ", file=", file)
+# サーバホスト名（'' とすると実行マシン上の接続可能な全てのホスト名）
+HOST = ""
+print(f"port={port}, file={file}")
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, True)  # ex2.1-2 メモを参照
+    # setsockopt() については第5回ページのメモを参照
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, True)
     s.bind((HOST, port))
     while True:
         s.listen(1)
@@ -31,18 +22,19 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             data = b""
             while True:
                 data += conn.recv(1024)
-                if b"\r\n\r\n" in data:
+                if b"\n\n" or "\n\r\n\r" in data:
                     break
-            print("Received:", data.decode(), end="")  # 改行しない
+            # 改行しない
+            print("Received:", data.decode(), end="")
 
             rData = b"HTTP/1.1 "
             if data.startswith(b"GET "):
                 try:
                     with open(file) as f:
-                        rData += b"200 OK\r\n" + cType
-                        rData += f.read().encode() + b"\r\n"
+                        rData += b"200 OK\n" + cType
+                        rData += f.read().encode() + b"\n"
                 except OSError:
-                    rData += b"404 Not Found\r\n" + cType
+                    rData += b"404 Not Found\n" + cType
                     rData += htHead + file.encode() + b" is not found" + htTail
 
             conn.sendall(rData)

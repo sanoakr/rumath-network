@@ -1,8 +1,9 @@
 # Echo client program
 import socket
-
-HOST = 'localhost'        # リモート（サーバ）ホスト名
-PORT = 50007              # リモート（サーバ）ホストのポート番号
+# リモート（サーバ）ホスト名
+HOST = 'localhost'
+# リモート（サーバ）ホストのポート番号
+PORT = 50007
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
