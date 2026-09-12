@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "docs/**"
+      - "notebooks/**"
       - "mkdocs.yml"
       - "pyproject.toml"
       - "uv.lock"
@@ -30,6 +31,15 @@ jobs:
           enable-cache: true
       - run: uv sync --frozen
       - run: uv run mkdocs build --strict
+      # 教材ノートブック（marimo）をブラウザ内で動く WASM 版に書き出して site/notebooks/ に置く
+      - name: Export marimo notebooks (WASM)
+        run: |
+          for nb in notebooks/*.py; do
+            name=$(basename "$nb" .py)
+            uv run marimo export html-wasm "$nb" -o "site/notebooks/$name" --mode edit
+            # edit モードは既定で自動実行がオフなので、開いた時点で実行されるようにする
+            sed -i 's/auto_instantiate\\": false/auto_instantiate\\": true/; s/"auto_instantiate": *false/"auto_instantiate": true/' "site/notebooks/$name/index.html"
+          done
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

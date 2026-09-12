@@ -1,0 +1,139 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "1cd767f421bcd2a3d0382699ed92790c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"_1\">\u30ce\u30fc\u30c8\u30d6\u30c3\u30af\u3068\u306f</h1>\n<span class=\"paragraph\">\u30ce\u30fc\u30c8\u30d6\u30c3\u30af\u306f\u3001Python \u3092\u30a4\u30f3\u30bf\u30e9\u30af\u30c6\u30a3\u30d6\u306b\u52d5\u4f5c\u3055\u305b\u308b\u305f\u3081\u306e\u5bfe\u8a71\u578b\u306e\u5b9f\u884c\u74b0\u5883\u3067\u3059\u3002\n\u30ce\u30fc\u30c8\u30d6\u30c3\u30af\u4e0a\u3067\u306f\u3001\u3053\u306e\u6587\u7ae0\u306e\u3088\u3046\u306b\u5b9f\u884c\u53ef\u80fd\u306a Python \u30b3\u30fc\u30c9\u306e\u4ed6\u306b\u3001\u30c6\u30ad\u30b9\u30c8\u3084\u6570\u5f0f\u3001\u753b\u50cf\u306a\u3069\u3092\u542b\u3081\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002</span>\n<marimo-tex class=\"arithmatex\">||[\\sin^2\\theta + \\cos^2\\theta = 1||]</marimo-tex><span class=\"paragraph\">\u30ce\u30fc\u30c8\u30d6\u30c3\u30af\u74b0\u5883\u3068\u3057\u3066\u6709\u540d\u306a\u306e\u306f <strong>Jupyter</strong>\uff08\u30b8\u30e5\u30d4\u30bf\u30fc\uff09\u3067\u3001\u3053\u306e\u79d1\u76ee\u306e\u6559\u6750\u3082\u4ee5\u524d\u306f Jupyter Notebook\uff08<code>.ipynb</code> \u30d5\u30a1\u30a4\u30eb\uff09\u3067\u914d\u5e03\u3057\u3066\u3044\u307e\u3057\u305f\u3002\n\u73fe\u5728\u306f\u3001Jupyter \u3092\u767a\u5c55\u3055\u305b\u305f <strong>marimo</strong>\uff08\u30de\u30ea\u30e2\uff09\u3068\u3044\u3046\u30ce\u30fc\u30c8\u30d6\u30c3\u30af\u3092\u4f7f\u3063\u3066\u3044\u307e\u3059\u3002\u3044\u307e\u8aad\u3093\u3067\u3044\u308b\u3053\u306e\u30da\u30fc\u30b8\u304c marimo \u306e\u30ce\u30fc\u30c8\u30d6\u30c3\u30af\u3067\u3059\u3002</span>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Jupyter</th>\n<th>marimo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>\u30d5\u30a1\u30a4\u30eb\u5f62\u5f0f</td>\n<td><code>.ipynb</code>\uff08JSON\uff09</td>\n<td><code>.py</code>\uff08\u3075\u3064\u3046\u306e Python \u30d5\u30a1\u30a4\u30eb\uff09</td>\n</tr>\n<tr>\n<td>\u30bb\u30eb\u306e\u5b9f\u884c</td>\n<td>\u81ea\u5206\u3067\u9078\u3093\u3060\u9806\u306b\u5b9f\u884c</td>\n<td>\u5909\u6570\u306e\u4f9d\u5b58\u95a2\u4fc2\u3092\u8ffd\u8de1\u3057\u3001<strong>\u95a2\u4fc2\u3059\u308b\u30bb\u30eb\u3092\u81ea\u52d5\u3067\u518d\u5b9f\u884c</strong></td>\n</tr>\n<tr>\n<td>\u52d5\u304b\u3059\u5834\u6240</td>\n<td>Jupyter / Colab / VS Code</td>\n<td>\u30d6\u30e9\u30a6\u30b6\u3060\u3051\u3067\u52d5\u304f\uff08\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u4e0d\u8981\uff09\u3001VS Code\u3001\u30ed\u30fc\u30ab\u30eb</td>\n</tr>\n</tbody>\n</table></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "2c0795eb03c7243b63e258a7c49ba786",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"_1\">\u30ce\u30fc\u30c8\u30d6\u30c3\u30af\u3092\u5b9f\u884c\u3059\u308b\u306b\u306f</h2>\n<span class=\"paragraph\">\u3053\u306e\u79d1\u76ee\u306e\u30ce\u30fc\u30c8\u30d6\u30c3\u30af\u306f\u3001\u79d1\u76ee Web \u30da\u30fc\u30b8\u304b\u3089\u30d6\u30e9\u30a6\u30b6\u3067\u958b\u304f\u3060\u3051\u3067\u5b9f\u884c\u3067\u304d\u307e\u3059\uff08WebAssembly \u7248\u306e Python \u304c\u30d6\u30e9\u30a6\u30b6\u5185\u3067\u52d5\u304d\u307e\u3059\uff09\u3002\n\u81ea\u5206\u306e PC \u306b\u4f55\u3082\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3059\u308b\u5fc5\u8981\u306f\u3042\u308a\u307e\u305b\u3093\u3002</span>\n<span class=\"paragraph\">\u81ea\u5206\u306e PC \u4e0a\u3067\u52d5\u304b\u3057\u305f\u3044\u5834\u5408\u306f\u3001Python \u304c\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u6e08\u307f\u3067\u3042\u308c\u3070\u6b21\u306e 2 \u884c\u3067\u52d5\u304d\u307e\u3059\u3002</span>\n<div class=\"language-text codehilite\"><pre><span></span><code>pip install marimo\nmarimo edit jupyter.py\n</code></pre></div>\n<span class=\"paragraph\">\u307e\u305f\u3001\u3053\u306e\u30ce\u30fc\u30c8\u30d6\u30c3\u30af\u306f\u3075\u3064\u3046\u306e Python \u30d5\u30a1\u30a4\u30eb\u306a\u306e\u3067\u3001<code>python jupyter.py</code> \u3068\u3057\u3066<strong>\u30b9\u30af\u30ea\u30d7\u30c8\u3068\u3057\u3066\u5b9f\u884c\u3059\u308b</strong>\u3053\u3068\u3082\u3067\u304d\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "2149e25b7accabc28c1eff39e9458273",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"_1\">\u30bb\u30eb\u3092\u5b9f\u884c\u3059\u308b</h2>\n<span class=\"paragraph\">Python \u306e\u30b3\u30fc\u30c9\u306f\u4ee5\u4e0b\u306e\u3088\u3046\u306a BOX\uff08<strong>\u30b3\u30fc\u30c9\u30bb\u30eb</strong>\uff09\u306b\u8a18\u8ff0\u3055\u308c\u3066\u3044\u307e\u3059\u3002\n\u30bb\u30eb\u3092\u9078\u629e\u3057\u305f\u72b6\u614b\u3067 <code>Shift + Enter</code> \u3092\u62bc\u3059\u304b\u3001\u30bb\u30eb\u53f3\u306e \u25b7 \u3092\u30af\u30ea\u30c3\u30af\u3059\u308b\u3068\u3001\u30bb\u30eb\u5185\u306e Python \u30b3\u30fc\u30c9\u304c\u5b9f\u884c\u3055\u308c\u307e\u3059\u3002</span>\n<span class=\"paragraph\">\u4ee5\u4e0b\u306e 2 \u3064\u306e\u30bb\u30eb\u3092\u4e0a\u304b\u3089\u9806\u306b\u5b9f\u884c\u3057\u3066\u307f\u307e\u3057\u3087\u3046\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "49f7bd39a9b0faa389306f81a4b2dd90",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "275488a53dfd39c8fa0f7d365a6820b2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>4.60129659643436</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "7eb04638149856a8b31a3671c02b7d64",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><code>b / a</code> \u306e\u8a08\u7b97\u7d50\u679c\u304c\u30bb\u30eb\u306e\u4e0b\u306b\u8868\u793a\u3055\u308c\u305f\u3068\u601d\u3044\u307e\u3059\u3002</span>\n<span class=\"paragraph\">\u6b21\u306b\u3001<strong>\u4e0a\u306e\u30bb\u30eb\u306e <code>a</code>, <code>b</code> \u306e\u5024\u3092\u66f8\u304d\u63db\u3048\u3066\u5b9f\u884c</strong>\u3057\u3066\u307f\u3066\u304f\u3060\u3055\u3044\u3002\n<code>b / a</code> \u306e\u30bb\u30eb\u306f\u81ea\u5206\u3067\u5b9f\u884c\u3057\u76f4\u3055\u306a\u304f\u3066\u3082\u3001<strong>\u81ea\u52d5\u7684\u306b\u518d\u5b9f\u884c\u3055\u308c\u3066\u7d50\u679c\u304c\u5909\u308f\u308a\u307e\u3059</strong>\u3002</span>\n<span class=\"paragraph\">\u30ce\u30fc\u30c8\u30d6\u30c3\u30af\u5185\u306e\u30b3\u30fc\u30c9\u30bb\u30eb\u306f\u72ec\u7acb\u3057\u3066\u304a\u3089\u305a\u3001\u540d\u524d\u7a7a\u9593\uff08\u5909\u6570\uff09\u3092\u5171\u6709\u3057\u3066\u3044\u307e\u3059\u3002\nmarimo \u306f\u300c\u3069\u306e\u30bb\u30eb\u304c\u3069\u306e\u5909\u6570\u3092\u4f7f\u3063\u3066\u3044\u308b\u304b\u300d\u3092\u8ffd\u8de1\u3057\u3066\u3044\u308b\u306e\u3067\u3001<code>a</code> \u3084 <code>b</code> \u3092\u5909\u3048\u308b\u3068\u3001\u305d\u308c\u3092\u4f7f\u3063\u3066\u3044\u308b\u30bb\u30eb\u304c\u3059\u3079\u3066\u518d\u8a08\u7b97\u3055\u308c\u307e\u3059\u3002\n\u3053\u306e\u3088\u3046\u306b\u3001\u30ce\u30fc\u30c8\u30d6\u30c3\u30af\u3067\u306f\u30b3\u30fc\u30c9\u30bb\u30eb\u5185\u306e Python \u30b3\u30fc\u30c9\u3092\u5bfe\u8a71\u7684\u306b\u4fee\u6b63\u30fb\u5b9f\u884c\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "a4a8b9db4b1698d99d9df0926bdccf63",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-1\">\u5909\u6570\u306f\u300c1 \u3064\u306e\u30bb\u30eb\u3067 1 \u56de\u3060\u3051\u300d\u5b9a\u7fa9\u3059\u308b</h2>\n<span class=\"paragraph\">Jupyter \u3067\u306f\u3001\u5225\u306e\u30bb\u30eb\u3067 <code>a = 0.1</code> \u306e\u3088\u3046\u306b\u540c\u3058\u5909\u6570\u3092\u5b9a\u7fa9\u3057\u76f4\u3059\u3053\u3068\u304c\u3067\u304d\u307e\u3057\u305f\u3002\n\u305d\u306e\u4ee3\u308f\u308a\u300c\u3069\u306e\u30bb\u30eb\u3092\u4f55\u756a\u76ee\u306b\u5b9f\u884c\u3057\u305f\u304b\u300d\u306b\u3088\u3063\u3066\u7d50\u679c\u304c\u5909\u308f\u3063\u3066\u3057\u307e\u3044\u3001\u6df7\u4e71\u306e\u3082\u3068\u306b\u306a\u3063\u3066\u3044\u307e\u3057\u305f\u3002</span>\n<span class=\"paragraph\">marimo \u3067\u306f\u3001<strong>\u540c\u3058\u5909\u6570\u3092\u8907\u6570\u306e\u30bb\u30eb\u3067\u5b9a\u7fa9\u3059\u308b\u3053\u3068\u306f\u3067\u304d\u307e\u305b\u3093</strong>\uff08\u30a8\u30e9\u30fc\u306b\u306a\u308a\u307e\u3059\uff09\u3002\n\u8a66\u3057\u306b\u3001\u4ee5\u4e0b\u306e\u30bb\u30eb\u306e <code>#</code> \u3092\u6d88\u3057\u3066\u5b9f\u884c\u3057\u3066\u307f\u3066\u304f\u3060\u3055\u3044\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "60e9cc601f215742de921db67939d269",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "1473d8bb73a2c7cfc068e03c8acbe5b3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u300c<code>a</code> \u304c\u8907\u6570\u306e\u30bb\u30eb\u3067\u5b9a\u7fa9\u3055\u308c\u3066\u3044\u308b\u300d\u3068\u3044\u3046\u30a8\u30e9\u30fc\u306b\u306a\u3063\u305f\u306f\u305a\u3067\u3059\u3002\n\u5024\u3092\u5909\u3048\u305f\u3044\u3068\u304d\u306f\u3001<strong>\u6700\u521d\u306b\u5b9a\u7fa9\u3057\u305f\u30bb\u30eb\u3092\u66f8\u304d\u63db\u3048\u308b</strong>\u306e\u304c marimo \u306e\u6d41\u5100\u3067\u3059\u3002\n\u3053\u3046\u3059\u308b\u3053\u3068\u3067\u300c\u4e0a\u304b\u3089\u9806\u306b\u8aad\u3081\u3070\u3001\u3044\u307e\u8868\u793a\u3055\u308c\u3066\u3044\u308b\u7d50\u679c\u306b\u306a\u308b\u300d\u3053\u3068\u304c\u5e38\u306b\u4fdd\u8a3c\u3055\u308c\u307e\u3059\u3002</span>\n<span class=\"paragraph\">\u30bb\u30eb\u5185\u3060\u3051\u3067\u4f7f\u3046\u4e00\u6642\u7684\u306a\u5909\u6570\u306b\u306f\u3001<code>_tmp</code> \u306e\u3088\u3046\u306b\u540d\u524d\u306e\u5148\u982d\u306b <code>_</code> \u3092\u4ed8\u3051\u308b\u3068\u3001\u4ed6\u306e\u30bb\u30eb\u3068\u885d\u7a81\u3057\u306a\u304f\u306a\u308a\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

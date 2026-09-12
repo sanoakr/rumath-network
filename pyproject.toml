@@ -5,4 +5,5 @@ description = "Course site for ネットワーク及び演習 (Ryukoku Universit
 requires-python = ">=3.12"
 dependencies = [
     "mkdocs-material>=9.6",
+    "marimo>=0.24",
 ]

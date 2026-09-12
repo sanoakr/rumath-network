@@ -9,10 +9,10 @@
 1. イントロ（科目概要の説明）
     1. [スライド資料](slides/network01.pdf)
     2. 生成 AI 利用についてのアンケート（講義中に案内します）
-2. Jupyter とは
-    1. [Jupyter Notebook: jupyter.ipynb](https://github.com/sanoakr/rumath-network/blob/main/jupyter.ipynb)
+2. ノートブック（marimo）とは
+    1. [ノートブックとは（ブラウザで開く）](https://sanoakr.github.io/rumath-network/notebooks/jupyter/)
 3. プログラミング言語 Python とは
-    1. [Jupyter Notebook: python_tutorial.ipynb](https://github.com/sanoakr/rumath-network/blob/main/python_tutorial.ipynb)
+    1. [Python 入門（ブラウザで開く）](https://sanoakr.github.io/rumath-network/notebooks/python_tutorial/)
 4. Python 実行環境
     1. [事前課題 ex0](ex0.md)
     2. 対話形式とソースコードの実行（デモします）
