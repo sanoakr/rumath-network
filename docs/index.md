@@ -9,7 +9,7 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 実際にクライアント／サーバを書きながら学びます。
 
 !!! info "この科目での質問方法"
-    詳しくは [この科目での質問方法](https://sanoakr.github.io/rumath-prog2/how-to-ask/) を読んでください。
+    詳しくは [この科目での質問方法](how-to-ask.md) を読んでください。
     質問は [Teams の科目チーム](https://teams.microsoft.com/l/team/19%3AhdLY9JyAjCPHaz7TKT_s27WitrXc9H3J61BfNoUVtEU1%40thread.tacv2/conversations?groupId=95ea40f3-3431-4f38-94f9-95bab4b39489&tenantId=23b65fdf-a4e3-4a19-b03d-12b1d57ad76e)の **「★ 質問用チャネル」** に投稿してください。
     他の受講者にも役立つ質問・回答は共有します。
 
@@ -41,8 +41,8 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 - [Python のインストール](setup/python-install.md)
 - Visual Studio Code のインストール（中野）: [Windows](http://www602.math.ryukoku.ac.jp/Prog1/vscode-win.html) / [macOS](http://www602.math.ryukoku.ac.jp/Prog1/vscode-mac.html)
 - [VS Code で Jupyter 環境を構築](setup/vscode-jupyter.md)
-- [paiza ラーニングでクーポンコードを使う](https://sanoakr.github.io/rumath-prog2/setup/paiza-coupon/)
-- [GitHub Copilot の有効化・無効化](https://sanoakr.github.io/rumath-prog2/setup/github-copilot/)
+- [paiza ラーニングでクーポンコードを使う](setup/paiza-coupon.md)
+- [GitHub Copilot の有効化・無効化](setup/github-copilot.md)
 
 ### 教材・ツール
 

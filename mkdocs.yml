@@ -57,6 +57,7 @@ markdown_extensions:
 plugins:
   - search:
       lang: ja
+  - include-markdown
 
 # 各回のページは講義に合わせて順次追加する（未公開回はここに載せない）
 nav:
@@ -68,3 +69,6 @@ nav:
   - 環境構築:
       - Python のインストール: setup/python-install.md
       - VS Code で Jupyter 環境を構築: setup/vscode-jupyter.md
+      - paiza ラーニングでクーポンコードを使う: setup/paiza-coupon.md
+      - GitHub Copilot の有効化・無効化: setup/github-copilot.md
+  - この科目での質問方法: how-to-ask.md

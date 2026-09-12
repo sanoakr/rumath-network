@@ -1,0 +1,3 @@
+[submodule "lecture-courses"]
+	path = lecture-courses
+	url = git@github.com:sanoakr/lecture-courses.git
