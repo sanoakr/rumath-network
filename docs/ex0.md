@@ -29,7 +29,7 @@ Python の実行環境が利用できれば、いずれの方法を利用して�
 [python.org](https://www.python.org/) からのインストール方法を以下に説明していますので、
 未整備の方は参考にしてください。
 
-- [Python のインストール](https://app.notion.com/p/Python-3a4108b3ef12408bbb7a34c90fd86716?pvs=21)
+- [Python のインストール](setup/python-install.md)
 
 ## プログラミング用エディタの準備（必須）
 
@@ -49,5 +49,5 @@ Jupyter は Google Colaboratory などのクラウド環境でも無料で実行
 Jupyter ファイル（Jupyter Notebook と呼ばれます）をダウンロードして自分の PC 上で実行できます。
 いずれかのタイミングでローカル環境を作成することをお勧めします。
 
-- [VS Code で Jupyter 環境を構築](https://app.notion.com/p/VS-Code-Jupyter-f5da3200b013495c88d3e9aa5b176a85?pvs=21)
+- [VS Code で Jupyter 環境を構築](setup/vscode-jupyter.md)
 - [jupyter.org](https://jupyter.org) にも pip コマンドで Jupyter をインストールする方法の解説があります
