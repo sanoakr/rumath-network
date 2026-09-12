@@ -64,3 +64,6 @@ nav:
   - 講義内容と演習課題:
       - 事前課題 ex0: ex0.md
       - 第1回 ex1 (09/18): ex1.md
+  - 環境構築:
+      - Python のインストール: setup/python-install.md
+      - VS Code で Jupyter 環境を構築: setup/vscode-jupyter.md

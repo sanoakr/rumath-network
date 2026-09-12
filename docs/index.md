@@ -2,11 +2,14 @@
 
 **後期 金曜 4・5 限 ＠ 1-608**（担当: 佐野 彰）
 
+[:fontawesome-brands-microsoft: Teams 科目チームを開く](https://teams.microsoft.com/l/team/19%3AhdLY9JyAjCPHaz7TKT_s27WitrXc9H3J61BfNoUVtEU1%40thread.tacv2/conversations?groupId=95ea40f3-3431-4f38-94f9-95bab4b39489&tenantId=23b65fdf-a4e3-4a19-b03d-12b1d57ad76e){ .md-button .md-button--primary }
+
 Python を使って、ソケット通信・HTTP・スレッドといったネットワークプログラミングの基礎を、
 実際にクライアント／サーバを書きながら学びます。
 
 !!! info "この科目での質問方法"
-    質問は Teams の科目チーム **「★ 質問用チャネル」** に投稿してください。
+    詳しくは [この科目での質問方法](https://sanoakr.github.io/rumath-prog2/how-to-ask/) を読んでください。
+    質問は [Teams の科目チーム](https://teams.microsoft.com/l/team/19%3AhdLY9JyAjCPHaz7TKT_s27WitrXc9H3J61BfNoUVtEU1%40thread.tacv2/conversations?groupId=95ea40f3-3431-4f38-94f9-95bab4b39489&tenantId=23b65fdf-a4e3-4a19-b03d-12b1d57ad76e)の **「★ 質問用チャネル」** に投稿してください。
     他の受講者にも役立つ質問・回答は共有します。
 
 ## 講義内容と演習課題
@@ -34,11 +37,11 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 
 ### 環境構築
 
-- [Python のインストール](https://app.notion.com/p/Python-3a4108b3ef12408bbb7a34c90fd86716?pvs=21)
+- [Python のインストール](setup/python-install.md)
 - Visual Studio Code のインストール（中野）: [Windows](http://www602.math.ryukoku.ac.jp/Prog1/vscode-win.html) / [macOS](http://www602.math.ryukoku.ac.jp/Prog1/vscode-mac.html)
-- [VS Code で Jupyter 環境を構築](https://app.notion.com/p/VS-Code-Jupyter-f5da3200b013495c88d3e9aa5b176a85?pvs=21)
-- [paiza ラーニングでクーポンコードを使う](https://app.notion.com/p/paiza-63b4f5a2d9c8477e9d15d3787dbdb7c6?pvs=21)
-- [GitHub Copilot の有効化・無効化](https://app.notion.com/p/GitHub-Copilot-288f727ec89580d49ef4d509e9cc4af6?pvs=21)
+- [VS Code で Jupyter 環境を構築](setup/vscode-jupyter.md)
+- [paiza ラーニングでクーポンコードを使う](https://sanoakr.github.io/rumath-prog2/setup/paiza-coupon/)
+- [GitHub Copilot の有効化・無効化](https://sanoakr.github.io/rumath-prog2/setup/github-copilot/)
 
 ### 教材・ツール
 
