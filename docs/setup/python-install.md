@@ -1,13 +1,13 @@
 # Python のインストール
 
-Python の環境は Microsoft Store や Homebrew、あるいは WSL を利用しても構築することができます。ここでは、とりあえずのオススメとして、[python.org](https://www.python.org/) のインストールパッケージを利用する方法を説明します。これを書いている時点での Python の最新バージョンは 3.14.7 ですが、この科目の内容であれば、すでにインストール済みの Python3 をそのまま使っても問題ありません。
+Python の環境は Microsoft Store や Homebrew、あるいは WSL を利用しても構築することができます。ここでは、とりあえずのオススメとして、[python.org](https://www.python.org/) のインストールパッケージを利用する方法を説明します。現在の Python の最新バージョンは 3.14 系ですが、この科目の内容であれば、すでにインストール済みの Python3 をそのまま使っても問題ありません。
 
 1. [python.org](https://www.python.org/) の [Downloads](https://www.python.org/downloads/) より、利用している OS に対応したインストールパッケージをダウンロードしてください。Webブラウザで  [Downloads](https://www.python.org/downloads/) すると自動的に OS に対応した最新のインストールパッケージのリンクが上部に表示されます。
 
 === "Windows の場合"
 
     1. ダウンロードしたインストールパッケージを実行してください。
-    2. 表示される画面の最下部にある「Add Python 3.14 to PATH」にチェックを入れて「Install Now」よりインストールを開始します。
+    2. 表示される画面の最下部にある「Add Python 3.x to PATH」にチェックを入れて「Install Now」よりインストールを開始します。
         ![画像](../assets/setup/python-install/img01.png)
 
     3. 「Setup was successful」で成功です。
@@ -24,7 +24,7 @@ Python の環境は Microsoft Store や Homebrew、あるいは WSL を利用し
 
     #### インストールの修正
 
-    1. インストールの確認がうまくできなかった場合、「Add Python 3.14 to PATH」のチェック漏れの可能性があります。
+    1. インストールの確認がうまくできなかった場合、「Add Python 3.x to PATH」のチェック漏れの可能性があります。
     2. インストールパッケージを再度起動し、Modify から「Add Python to environment variables」をチェックしてInstall することでこれを修正できます。
         ![画像](../assets/setup/python-install/img03.png)
 
