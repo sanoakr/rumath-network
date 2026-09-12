@@ -3,7 +3,7 @@
 この科目ではプログラミング言語として Python を利用します。
 **初回（9/18）までに**、以下を参考にして自分の PC 上に Python プログラミング環境を準備してください。
 
-## Python のインストール（必須）
+## Python のインストール（必須） {: .exercise }
 
 Python の実行環境を用意してください。すでに数理情報演習など他のプログラミング科目で
 Python 環境を構築済みの場合は、それをそのまま利用して構いません。
@@ -31,14 +31,14 @@ Python の実行環境が利用できれば、いずれの方法を利用して�
 
 - [Python のインストール](setup/python-install.md)
 
-## プログラミング用エディタの準備（必須）
+## プログラミング用エディタの準備（必須） {: .exercise }
 
 C 言語と同様に、Python プログラミングを行うためのテキストエディタを準備してください。
 とくに拘りがなければ、C 言語プログラミング科目でも利用した Visual Studio Code を推奨します。
 
 - Visual Studio Code のインストール（中野）: [Windows](http://www602.math.ryukoku.ac.jp/Prog1/vscode-win.html) / [macOS](http://www602.math.ryukoku.ac.jp/Prog1/vscode-mac.html)
 
-## ノートブック環境の準備（任意）
+## ノートブック環境の準備（任意） {: .exercise }
 
 この科目では、講義資料として Python コードをインタラクティブに実行できる**ノートブック**（marimo）を利用します。
 [教材ノートブック](notebooks.md) は科目 Web ページからブラウザで開くだけで実行できるので、**環境構築は不要**です。

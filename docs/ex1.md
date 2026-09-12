@@ -19,11 +19,11 @@
 
 ## 演習課題
 
-### 事前課題 0（完了していない人）
+### 事前課題 0（完了していない人） {: .exercise }
 
 [ex0 — Python プログラミング環境の準備](ex0.md) を済ませてください。
 
-### 演習課題 1. paiza ラーニングの講座「Python 体験編 1: Python をはじめよう」に合格する
+### 演習課題 1. paiza ラーニングの講座「Python 体験編 1: Python をはじめよう」に合格する {: .exercise }
 
 1. [paiza ラーニングでクーポンコードを使う](setup/paiza-coupon.md)
    を参考にして、[paiza ラーニング](https://paiza.jp/works/) の利用準備をします。
@@ -38,7 +38,7 @@
 
 ![paiza 認定証の例](assets/paiza-cert.png){ width="600" }
 
-### 演習課題 2. オンラインジャッジへのログインと課題提出
+### 演習課題 2. オンラインジャッジへのログインと課題提出 {: .exercise }
 
 この科目では、プログラミング課題の提示・提出・自動採点に **[aiJudge](https://judge.math.ryukoku.ac.jp/)** を利用します。
 

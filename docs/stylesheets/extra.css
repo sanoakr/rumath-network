@@ -1,0 +1,13 @@
+/* 演習課題（1つ1つのタスク）の見出しを目立たせる */
+h2.exercise, h3.exercise {
+  margin-top: 2em;
+  padding: 0.5em 0.9em;
+  background: var(--md-primary-fg-color--light, #e0f2f1);
+  border-left: 6px solid var(--md-primary-fg-color, #00695c);
+  border-radius: 0 6px 6px 0;
+}
+
+[data-md-color-scheme="slate"] h2.exercise,
+[data-md-color-scheme="slate"] h3.exercise {
+  background: rgba(0, 150, 136, 0.15);
+}
