@@ -1,0 +1,471 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": "1222221595db8b2ba642dda1c375fa06"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "4c5bc13b4acf55272c2232bf60af8e90",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"python-sympy\">Python \u306e\u6570\u5f0f\u51e6\u7406\uff08\u6570\u5f0f\u51e6\u7406 Sympy \u30e2\u30b8\u30e5\u30fc\u30eb)</h1>\n<span class=\"paragraph\">Python \u306b\u306f Mathematica \u3084 Maple \u306a\u3069\u306e\u6570\u5f0f\u51e6\u7406\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u3068\u540c\u69d8\u306b\u3001\u6570\u5f0f\u51e6\u7406\u3092\u884c\u3046\u305f\u3081\u306e\u30e2\u30b8\u30e5\u30fc\u30eb Sympy \u304c\u7528\u610f\u3055\u308c\u3066\u3044\u307e\u3059\u3002Sympy \u30e2\u30b8\u30e5\u30fc\u30eb\u3092\u4f7f\u3046\u3068\u3001\u6570\u5f0f\u3092 Python \u306e\u30b3\u30fc\u30c9\u3067\u8868\u73fe\u3057\u3001\u6570\u5f0f\u3068\u3057\u3066\u5fae\u5206\u30fb\u7a4d\u5206\u306a\u3069\u306e\u8a08\u7b97\u3092\u884c\u3046\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "899518702580c4fb801e67f7954d12ce",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Sympy \u30e2\u30b8\u30e5\u30fc\u30eb\u3092\u4f7f\u3046\u306b\u306f\u3001\u307e\u305a Sympy \u30e2\u30b8\u30e5\u30fc\u30eb\u306e\u30a4\u30f3\u30dd\u30fc\u30c8\u304c\u5fc5\u8981\u3067\u3059\u3002\u81ea\u5206\u306ePC\u4e0a\u3067\u5b9f\u884c\u3059\u308b\u5834\u5408\u306f Sympy \u30e2\u30b8\u30e5\u30fc\u30eb\u306e\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3082\u5fc5\u8981\u3067\u3059\u3002Google Colaboratory \u3067\u3042\u308c\u3070 Sympy \u30e2\u30b8\u30e5\u30fc\u30eb\u304c\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u6e08\u307f\u306a\u306e\u3067\u3001\u30a4\u30f3\u30dd\u30fc\u30c8\u306e\u307f\u3067\u5229\u7528\u3067\u304d\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "e13686a290fa7f2136203e2c69d362cf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "0b9a731939225ca2cac67c1fdd163ebc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u4e0a\u8a18\u306e2\u884c\u76ee init_printing() \u3092\u5b9f\u884c\u3059\u308b\u3068\u3001\u6570\u5f0f\u304c LaTeX \u5f62\u5f0f\u3067\u8868\u793a\u3055\u308c\u308b\u3088\u3046\u306b\u306a\u308a\u307e\u3059\u3002init_printing() \u3092\u5b9f\u884c\u3057\u306a\u3044\u5834\u5408\u306f\u3001\u6570\u5f0f\u306f\u6587\u5b57\u5217\u3068\u3057\u3066\u8868\u793a\u3055\u308c\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "d6d2ac593b780d3d690b2c06207ca52c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">x\uff0cy \u3092\u6570\u5f0f\u306e\u5909\u6570\u3068\u3057\u3066\u5b9a\u7fa9\u3057\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "052926bef9fcb40f3de812a84e30fc39",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "9b6e66961d31e8c8a0f15ae19d15f56a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">x \u3092\u5909\u6570\u3068\u3057\u3066\u4f7f\u3063\u305f\u6570\u5f0f eq \u3092\u5b9a\u7fa9\u3057\u307e\u3059\u3002\u6570\u5f0f\u306f\u6587\u5b57\u5217\u3068\u3057\u3066\u5b9a\u7fa9\u3057\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "f99d28cc8464dd79bb909dbb7f5e26f7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "0c44d7daec6d4db5fbd23eaad338d896",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">eq \u306e2\u4e57\u3092\u5c55\u958b\u3057\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "d6d9eed1280a0ff3a6c2019cccb1d725",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[\nx^{4} + 2 x^{3} + 3 x^{2} + 2 x + 1\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "1c8e7e1b3260944053423d98bfe1f577",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">eq \u309299\u4e57\u3057\u305f\u6570\u5f0f eq99 \u3092\u5b9a\u7fa9\u3057\u3066\u3001\u305d\u308c\u3092\u56e0\u6570\u5206\u89e3\u3057\u307e\u3059\u3002\u3061\u3083\u3093\u3068 eq \u306e99\u4e57\u3068\u3057\u3066\u56e0\u6570\u5206\u89e3\u3055\u308c\u3066\u3044\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "1ab4437ffca85e3d70ffc6d337d24451",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[\n\\left(x^{2} + x + 1\\right)^{99}\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "x**198 + 99*x**197 + 4950*x**196 + 166551*x**195 + 4239774*x**194 + 87051195*x**193 + 1500888081*x**192 + 22340496024*x**191 + 292937018220*x**190 + 3436033710956*x**189 + 36490106744784*x**188 + 354275442877860*x**187 + 3169698253439256*x**186 + 26308711989798084*x**185 + 203722364733024060*x**184 + 1478900848027979376*x**183 + 10107036646576668414*x**182 + 65266052756175512010*x**181 + 399516499760185868676*x**180 + 2324946948918043317714*x**179 + 12895436293513846088940*x**178 + 68328808144948742614146*x**177 + 346592486161430296715214*x**176 + 1686166107655915664772840*x**175 + 7881204239427555114358896*x**174 + 35446775471874074996486568*x**173 + 153630420099195236139940536*x**172 + 642493067550943230096586496*x**171 + 2595854754311767613679428568*x**170 + 10143862141632648031646748936*x**169 + 38378855271576195218025842736*x**168 + 140724313408860483464260765128*x**167 + 500528156169603552256189800261*x**166 + 1728374145534640567869583769511*x**165 + 5798834339101190210409412812678*x**164 + 18917313315851230210716947279811*x**163 + 60047691217418720222028564644086*x**162 + 185581800464354862117153026464503*x**161 + 558784147526627213874529345082661*x**160 + 1640115458304753662748921213098136*x**159 + 4695309777563639349621499199977848*x**158 + 13117113042602696439140168919056016*x**157 + 35777416698238366921674444545279736*x**156 + 95318593011353726871638368822621848*x**155 + 248161777580931680558930954616601416*x**154 + 631628437415801557685447770475988096*x**153 + 1572279334085147020023685796014347288*x**152 + 3829147992151711284832528852586948616*x**151 + 9127128216100652788643577944347960746*x**150 + 21299691547674320331235394528619902838*x**149 + 48681076195976278697166128361663785076*x**148 + 109000524984437478147357138715409627286*x**147 + 239169701466490157658725570305113505788*x**146 + 514416097012025409389086815009538678926*x**145 + 1084850312530754293519850495462691686586*x**144 + 2243792693284138683087470190403713351648*x**143 + 4552595062659477148619770709364124827516*x**142 + 9063577944455953492494006626848918892436*x**141 + 17709289182151651754978546880299315844648*x**140 + 33966870281974697701623311126745245990916*x**139 + 63966254946336985896032150138528567631456*x**138 + 118296375608223367712637608229839398858428*x**137 + 214880733156564387527946223094368378867116*x**136 + 383447469605071170081989882253644883518856*x**135 + 672310759610551856668005032843208052071978*x**134 + 1158404384354675737606904773134682170731766*x**133 + 1961748346301104907153749040720743527007956*x**132 + 3265753411150870672205851539861153210426678*x**131 + 5344924865714319253748266509569044827922116*x**130 + 8601541560839245723553084253890600872920006*x**129 + 13612663990971983924198102483724197911678218*x**128 + 21188255170231693410423842827885764113314776*x**127 + 32440168550151407747072565515243037887050356*x**126 + 48860177499637165373901196000726768018374468*x**125 + 72403052058238428052061815553236739760082176*x**124 + 105567979852141418307189265185623526617318172*x**123 + 151468552258854725234581677540214741698234552*x**122 + 213878418490481209508826729886449777051812076*x**121 + 297237033107318757536066060479590943363134372*x**120 + 406598308007619243782600273244706744732849152*x**119 + 547505126662882947249749159030563101227913846*x**118 + 725775259993845259356477364662972858599252002*x**117 + 947189751537919541998621869872438504874150852*x**116 + 1217083508378608765767282210281919024565940346*x**115 + 1539849372767338180049007765115637749505435052*x**114 + 1918380518294706832517324360695944165501937242*x**113 + 2353490183158168002102667747359603741402868806*x**112 + 2843360585613310989675773947980649877470760952*x**111 + 3383082131148574410359182671364129745076936792*x**110 + 3964347510625975711999572107987163635900008656*x**109 + 4575361217028921580661175721443621203527368152*x**108 + 5201012413313095020152790563336191507086233592*x**107 + 5823338160278568379050318504593485022148322056*x**106 + 6422276294047861782900008815151902004443712352*x**105 + 6976675561210802328475891642317242812493451192*x**104 + 7465498828221889461546109303184588679253232136*x**103 + 7869127642487614583413303833476370908503456797*x**102 + 8170657342621829466901950203385997388542198767*x**101 + 8357064634887554555530213177768998239228948886*x**100 + 8420135921613053845582092764846007419010010347*x**99 + 8357064634887554555530213177768998239228948886*x**98 + 8170657342621829466901950203385997388542198767*x**97 + 7869127642487614583413303833476370908503456797*x**96 + 7465498828221889461546109303184588679253232136*x**95 + 6976675561210802328475891642317242812493451192*x**94 + 6422276294047861782900008815151902004443712352*x**93 + 5823338160278568379050318504593485022148322056*x**92 + 5201012413313095020152790563336191507086233592*x**91 + 4575361217028921580661175721443621203527368152*x**90 + 3964347510625975711999572107987163635900008656*x**89 + 3383082131148574410359182671364129745076936792*x**88 + 2843360585613310989675773947980649877470760952*x**87 + 2353490183158168002102667747359603741402868806*x**86 + 1918380518294706832517324360695944165501937242*x**85 + 1539849372767338180049007765115637749505435052*x**84 + 1217083508378608765767282210281919024565940346*x**83 + 947189751537919541998621869872438504874150852*x**82 + 725775259993845259356477364662972858599252002*x**81 + 547505126662882947249749159030563101227913846*x**80 + 406598308007619243782600273244706744732849152*x**79 + 297237033107318757536066060479590943363134372*x**78 + 213878418490481209508826729886449777051812076*x**77 + 151468552258854725234581677540214741698234552*x**76 + 105567979852141418307189265185623526617318172*x**75 + 72403052058238428052061815553236739760082176*x**74 + 48860177499637165373901196000726768018374468*x**73 + 32440168550151407747072565515243037887050356*x**72 + 21188255170231693410423842827885764113314776*x**71 + 13612663990971983924198102483724197911678218*x**70 + 8601541560839245723553084253890600872920006*x**69 + 5344924865714319253748266509569044827922116*x**68 + 3265753411150870672205851539861153210426678*x**67 + 1961748346301104907153749040720743527007956*x**66 + 1158404384354675737606904773134682170731766*x**65 + 672310759610551856668005032843208052071978*x**64 + 383447469605071170081989882253644883518856*x**63 + 214880733156564387527946223094368378867116*x**62 + 118296375608223367712637608229839398858428*x**61 + 63966254946336985896032150138528567631456*x**60 + 33966870281974697701623311126745245990916*x**59 + 17709289182151651754978546880299315844648*x**58 + 9063577944455953492494006626848918892436*x**57 + 4552595062659477148619770709364124827516*x**56 + 2243792693284138683087470190403713351648*x**55 + 1084850312530754293519850495462691686586*x**54 + 514416097012025409389086815009538678926*x**53 + 239169701466490157658725570305113505788*x**52 + 109000524984437478147357138715409627286*x**51 + 48681076195976278697166128361663785076*x**50 + 21299691547674320331235394528619902838*x**49 + 9127128216100652788643577944347960746*x**48 + 3829147992151711284832528852586948616*x**47 + 1572279334085147020023685796014347288*x**46 + 631628437415801557685447770475988096*x**45 + 248161777580931680558930954616601416*x**44 + 95318593011353726871638368822621848*x**43 + 35777416698238366921674444545279736*x**42 + 13117113042602696439140168919056016*x**41 + 4695309777563639349621499199977848*x**40 + 1640115458304753662748921213098136*x**39 + 558784147526627213874529345082661*x**38 + 185581800464354862117153026464503*x**37 + 60047691217418720222028564644086*x**36 + 18917313315851230210716947279811*x**35 + 5798834339101190210409412812678*x**34 + 1728374145534640567869583769511*x**33 + 500528156169603552256189800261*x**32 + 140724313408860483464260765128*x**31 + 38378855271576195218025842736*x**30 + 10143862141632648031646748936*x**29 + 2595854754311767613679428568*x**28 + 642493067550943230096586496*x**27 + 153630420099195236139940536*x**26 + 35446775471874074996486568*x**25 + 7881204239427555114358896*x**24 + 1686166107655915664772840*x**23 + 346592486161430296715214*x**22 + 68328808144948742614146*x**21 + 12895436293513846088940*x**20 + 2324946948918043317714*x**19 + 399516499760185868676*x**18 + 65266052756175512010*x**17 + 10107036646576668414*x**16 + 1478900848027979376*x**15 + 203722364733024060*x**14 + 26308711989798084*x**13 + 3169698253439256*x**12 + 354275442877860*x**11 + 36490106744784*x**10 + 3436033710956*x**9 + 292937018220*x**8 + 22340496024*x**7 + 1500888081*x**6 + 87051195*x**5 + 4239774*x**4 + 166551*x**3 + 4950*x**2 + 99*x + 1\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "0d3a442d3d7daf035e4df29281483d2a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">eq \u306e\u89e3\u3092\u6c42\u3081\u307e\u3057\u3087\u3046\u3002\u8907\u6570\u306e\u89e3\u304c\u30ea\u30b9\u30c8\u3068\u3057\u3066\u8fd4\u3055\u308c\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "44144e14e998a51bb285421f3b04abee",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n- \\\\frac{1}{2} - \\\\frac{\\\\sqrt{3} i}{2}\\n||]</marimo-tex></span>\", \"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n- \\\\frac{1}{2} + \\\\frac{\\\\sqrt{3} i}{2}\\n||]</marimo-tex></span>\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "bf14685c3ae965b4c47db81b5e661a60",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u5fae\u5206\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "2458dcbbea6a294d0f8fe55a02be096c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[\n2 x + 1\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "65f81f250f6d34f1f60922fbcf840610",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u7a4d\u5206\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "2623f78a96dcbd19a1e6a3f9d3e756d2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[\n\\frac{x^{3}}{3} + \\frac{x^{2}}{2} + x\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "836b27f3cea4fefc1639e2a0ed0d0b3b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">x \u306b\u3064\u3044\u3066 0 \u304b\u3089 1 \u307e\u3067\u7a4d\u5206\u3057\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "6bc13fac3dd0e57511db6db7625ca8c5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[\n\\frac{11}{6}\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "a2240409690384b88722d40ed91577ab",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">M \u30924\u5b57\u306e\u6b63\u65b9\u884c\u5217\u3068\u3057\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "9fbbbf1d2452c2bbecc5c7a736936f93",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[\n\\left[\\begin{matrix}3 &amp; -2 &amp; 4 &amp; -2\\\\5 &amp; 3 &amp; -3 &amp; -2\\\\5 &amp; -2 &amp; 2 &amp; -2\\\\5 &amp; -2 &amp; -3 &amp; 3\\end{matrix}\\right]\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "6204607b82759ea8fc6e560a80219660",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">M \u306e\u884c\u5217\u5f0f\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "67ea61ebf76b6944e8fee562a4bb8c9b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[\n-150\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "86d1365ce539eae6f2e6e77931b77731",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u9006\u884c\u5217\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "5f4513619095194ad1144c92cb0fd800",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[\n\\left[\\begin{matrix}\\frac{1}{3} &amp; \\frac{2}{15} &amp; - \\frac{4}{15} &amp; \\frac{2}{15}\\\\\\frac{5}{6} &amp; \\frac{1}{3} &amp; - \\frac{29}{30} &amp; \\frac{2}{15}\\\\\\frac{5}{6} &amp; \\frac{2}{15} &amp; - \\frac{23}{30} &amp; \\frac{2}{15}\\\\\\frac{5}{6} &amp; \\frac{2}{15} &amp; - \\frac{29}{30} &amp; \\frac{1}{3}\\end{matrix}\\right]\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xXTn",
+      "code_hash": "c880967a8ef0427bd773a2773e7064eb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u56fa\u6709\u5024\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "AjVT",
+      "code_hash": "3de699b93daa4c21d7d26b0f898ac5ff",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"text/plain+int:3\": 1, \"text/plain+int:-2\": 1, \"text/plain+int:5\": 2}"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pHFh",
+      "code_hash": "c77d68e25f53738ecd217858f8a474bd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u56fa\u6709\u30d9\u30af\u30c8\u30eb\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NCOB",
+      "code_hash": "2df7fbfd88d8bab341578ac950a2d79c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[[\"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n-2\\n||]</marimo-tex></span>\", 1, [\"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n\\\\left[\\\\begin{matrix}0\\\\\\\\1\\\\\\\\1\\\\\\\\1\\\\end{matrix}\\\\right]\\n||]</marimo-tex></span>\"]], [\"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n3\\n||]</marimo-tex></span>\", 1, [\"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n\\\\left[\\\\begin{matrix}1\\\\\\\\1\\\\\\\\1\\\\\\\\1\\\\end{matrix}\\\\right]\\n||]</marimo-tex></span>\"]], [\"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n5\\n||]</marimo-tex></span>\", 2, [\"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n\\\\left[\\\\begin{matrix}1\\\\\\\\1\\\\\\\\1\\\\\\\\0\\\\end{matrix}\\\\right]\\n||]</marimo-tex></span>\", \"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n\\\\left[\\\\begin{matrix}0\\\\\\\\-1\\\\\\\\0\\\\\\\\1\\\\end{matrix}\\\\right]\\n||]</marimo-tex></span>\"]]]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aqbW",
+      "code_hash": "a32c6457748562405162316098b039a1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">M \u3092\u5bfe\u89d2\u5316\u3057\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TRpd",
+      "code_hash": "55a509bae9e8c425e167449a5dc71510",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n\\\\left[\\\\begin{matrix}0 &amp; 1 &amp; 1 &amp; 0\\\\\\\\1 &amp; 1 &amp; 1 &amp; -1\\\\\\\\1 &amp; 1 &amp; 1 &amp; 0\\\\\\\\1 &amp; 1 &amp; 0 &amp; 1\\\\end{matrix}\\\\right]\\n||]</marimo-tex></span>\", \"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n\\\\left[\\\\begin{matrix}-2 &amp; 0 &amp; 0 &amp; 0\\\\\\\\0 &amp; 3 &amp; 0 &amp; 0\\\\\\\\0 &amp; 0 &amp; 5 &amp; 0\\\\\\\\0 &amp; 0 &amp; 0 &amp; 5\\\\end{matrix}\\\\right]\\n||]</marimo-tex></span>\", \"text/html:<span class=\\\"markdown prose dark:prose-invert contents\\\"><marimo-tex class=\\\"arithmatex\\\">||[\\n\\\\left[\\\\begin{matrix}-1 &amp; 0 &amp; 1 &amp; 0\\\\\\\\1 &amp; 1 &amp; -2 &amp; 1\\\\\\\\0 &amp; -1 &amp; 2 &amp; -1\\\\\\\\0 &amp; -1 &amp; 1 &amp; 0\\\\end{matrix}\\\\right]\\n||]</marimo-tex></span>\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TXez",
+      "code_hash": "4d1916958daf7a1263c6ed7d7afb1b7c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u3061\u3083\u3093\u3068 M \u306b\u623b\u308a\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dNNg",
+      "code_hash": "e732fc91e94228fd4537a5dd72631c8e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[\n\\left[\\begin{matrix}3 &amp; -2 &amp; 4 &amp; -2\\\\5 &amp; 3 &amp; -3 &amp; -2\\\\5 &amp; -2 &amp; 2 &amp; -2\\\\5 &amp; -2 &amp; -3 &amp; 3\\end{matrix}\\right]\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

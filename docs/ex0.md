@@ -38,16 +38,12 @@ C 言語と同様に、Python プログラミングを行うためのテキス�
 
 - Visual Studio Code のインストール（中野）: [Windows](http://www602.math.ryukoku.ac.jp/Prog1/vscode-win.html) / [macOS](http://www602.math.ryukoku.ac.jp/Prog1/vscode-mac.html)
 
-## Jupyter 環境の準備
+## ノートブック環境の準備（任意）
 
-この科目では、講義資料として Python コードをインタラクティブに実行できる Jupyter を利用します。
+この科目では、講義資料として Python コードをインタラクティブに実行できる**ノートブック**（marimo）を利用します。
+[教材ノートブック](notebooks.md) は科目 Web ページからブラウザで開くだけで実行できるので、**環境構築は不要**です。
 
-Jupyter は Google Colaboratory などのクラウド環境でも無料で実行できるので、
-当面はそれらのクラウド環境の利用で問題ありません。
-
-一方で、Jupyter 環境は自分の PC 上に構築することもできます。ローカル環境があれば、
-Jupyter ファイル（Jupyter Notebook と呼ばれます）をダウンロードして自分の PC 上で実行できます。
-いずれかのタイミングでローカル環境を作成することをお勧めします。
+自分の PC 上でも動かしたい場合は、Python をインストールした後に `pip install marimo` で導入できます。
+VS Code でノートブック（Jupyter / marimo）を扱う方法は以下を参考にしてください。
 
 - [VS Code で Jupyter 環境を構築](setup/vscode-jupyter.md)
-- [jupyter.org](https://jupyter.org) にも pip コマンドで Jupyter をインストールする方法の解説があります

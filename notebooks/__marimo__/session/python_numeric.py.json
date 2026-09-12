@@ -1,0 +1,299 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "68c66f35d4265e2a24d067e80b82a3f3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"python\">Python \u306e\u6570\u5024\u30ea\u30c6\u30e9\u30eb\u3068\u578b</h1>\n<span class=\"paragraph\">\u3053\u3053\u3067\u306f Python \u3067\u5229\u7528\u3067\u304d\u308b\u7279\u5fb4\u7684\u306a\u6570\u5024\u6f14\u7b97\u306e\u4f8b\u3092\u7d39\u4ecb\u3057\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "133dce00eee83253a649a02f09c4699b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1\">1\uff0e\u57fa\u672c\u7684\u306a\u6570\u5024\u30ea\u30c6\u30e9\u30eb\u3068\u578b</h2>\n<span class=\"paragraph\">Python\u3067\u5229\u7528\u3067\u304d\u308b\u6570\u5024\u578b\u304c\u6574\u6570\u578b\uff08int\uff09\u3068\u6d6e\u52d5\u5c0f\u6570\u70b9\u578b\uff08float\uff09\u306e2\u7a2e\u985e\u3067\u3042\u308b\u3053\u3068\u306f\u524d\u8ff0\u306e\u901a\u308a\u3067\u3059\u3002\u52d5\u7684\u578b\u4ed8\u3051\u3055\u308c\u305f\u5909\u6570\u304c\u3069\u306e\u578b\u3092\u6301\u3064\u304b\u306f\u3001type() \u95a2\u6570\u3067\u78ba\u8a8d\u3067\u304d\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "37a1395aa2cfb644396d8482a03d3ee4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "a = 1 <class 'int'>\nx = 1.0 <class 'float'>\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "1552d27dfc7bcf9f23d838730a72a1bd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u307e\u305f\u3001C\u8a00\u8a9e\u306a\u3069\u3067\u306f\u6271\u3046\u3053\u3068\u306e\u3067\u304d\u308b\u6574\u6570\u578b\u306e\u30b5\u30a4\u30ba\u304c\u9650\u3089\u308c\u3066\u3044\u308b\u306e\u306b\u5bfe\u3057\u3001Python\u3067\u306f\u6574\u6570\u578b\u306e\u30b5\u30a4\u30ba\u306b\u5236\u9650\u306f\u3042\u308a\u307e\u305b\u3093\uff08\u591a\u500d\u9577\u6574\u6570\uff09\u3002\u305d\u306e\u305f\u3081\u3001Python\u3067\u306f\u6574\u6570\u578b\u306e\u5909\u6570\u306b\u5927\u304d\u306a\u5024\u3092\u4ee3\u5165\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "cc38b1e79b8ecbb6a4d139938a18f7df",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "822526259969628839104253165869933624624768975718986341753117113191672345101686635234711078432787527087114699126238380568851450669625883238384735536304145587136095844229774592556217075848515269880288897142287955821529180675549369033497201746908666410370342866279796500763077997366010000000000\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Xref",
+      "code_hash": "bdbdd81c68d71b1190af0780d152dc6f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u4e00\u65b9\u3067\u3001\u6d6e\u52d5\u5c0f\u6570\u70b9\u578b\uff08float\uff09\u306f\u3001C\u8a00\u8a9e\u306a\u3069\u3068\u540c\u69d8\u306b\u3001\u500d\u7cbe\u5ea6\uff0864\u30d3\u30c3\u30c8\uff09\u306e\u6d6e\u52d5\u5c0f\u6570\u70b9\u6570\u3068\u3057\u3066\u6271\u308f\u308c\u307e\u3059\u3002\u3057\u305f\u304c\u3063\u3066\u3001Python \u3067\u3082\u8a08\u7b97\u6a5f\u30a4\u30d7\u30b7\u30ed\u30f3\uff08\u6a5f\u68b0\u30a4\u30d7\u30b7\u30ed\u30f3\uff09\u304c\u5b58\u5728\u3057\u307e\u3059\u3002\u8a08\u7b97\u6a5f\u30a4\u30d7\u30b7\u30ed\u30f3\u306f <marimo-tex class=\"arithmatex\">||(1+\\epsilon \\neq 1||)</marimo-tex> \u3068\u306a\u308b\u6700\u5c0f\u306e\u6b63\u306e\u5024\u3067\u3042\u308a\u3001Python \u3067\u306f\u3001\u4ee5\u4e0b\u306e\u3088\u3046\u306b\u78ba\u8a8d\u3067\u304d\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "ebc037c82f1dcbeb1804f35b59ac3148",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "2.220446049250313e-16\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "d85ba7a14260c1d4ba37c18e57aa1fab",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u307e\u305f\u3001\u5b9f\u6570\u3092\u6d6e\u52d5\u5c0f\u6570\u70b9\u6570\u3068\u3057\u3066\u6271\u3046\u305f\u3081\u3001Python\u3067\u3082\u5b9f\u6570\u306e\u6271\u3044\u3067\u306f\u8aa4\u5dee\u3092\u751f\u3058\u307e\u3059\u3002\u4f8b\u3048\u3070\u3001\u4ee5\u4e0b\u306e\u3088\u3046\u306b\u30010.1\u309210\u56de\u8db3\u3057\u3066\u3082\u3001\u305d\u306e\u5024\u306f1.0\u306b\u306f\u306a\u308a\u307e\u305b\u3093\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "c432109d3f1b3311cb0bd6cdb704d8e6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "0.9999999999999999\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "f633a1463ec31664672401a8a5b25816",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2python\">2\uff0ePython\u3067\u306e\u3044\u304f\u3064\u304b\u306e\u7279\u6b8a\u306a\u6570\u5024\u6f14\u7b97</h2>\n<span class=\"paragraph\">\u3053\u306e\u3088\u3046\u306bPython\u3067\u3082\u5b9f\u6570\u3092\u6271\u3046\u5834\u5408\u306b\u306f\u3001\u8aa4\u5dee\u304c\u751f\u3058\u308b\u3053\u3068\u306b\u6ce8\u610f\u3059\u308b\u5fc5\u8981\u304c\u3042\u308a\u307e\u3059\u3002\u3057\u304b\u3057\u3001Python\u306b\u306f\u3088\u308a\u6b63\u78ba\u306b\u5b9f\u6570\u3092\u6271\u3046\u305f\u3081\u306e\u6a5f\u80fd\u304c\u3044\u304f\u3064\u304b\u3042\u308a\u307e\u3059\u3002\n\u4e0a\u8a18\u306e\u4f8b\u3067\u306f\u30010.1\u309210\u56de\u8db3\u3057\u3066\u3082\u3001\u305d\u306e\u5024\u306f 1.0\u306b\u306a\u308a\u307e\u305b\u3093\u3067\u3057\u305f\u3002\u3053\u308c\u306f\u30010.1\u3092\u6709\u9650\u6841\u306e2\u9032\u6570\u3067\u8868\u73fe\u3067\u304d\u306a\u3044\u3053\u3068\u304c\u539f\u56e0\u3067\u3059\u3002Python\u3067\u306f\u3001\u3053\u306e\u3088\u3046\u306a\u6709\u9650\u6841\u306e2\u9032\u6570\u3067\u8868\u73fe\u3067\u304d\u306a\u3044\u5b9f\u6570\u3092\u6271\u3046\u305f\u3081\u306b\u3001decimal\u30e2\u30b8\u30e5\u30fc\u30eb\u3092\u5229\u7528\u3067\u304d\u307e\u3059\u3002decimal\u30e2\u30b8\u30e5\u30fc\u30eb\u3067\u306f\u3001\u6709\u9650\u6841\u306e10\u9032\u6570\u3067\u5b9f\u6570\u3092\u6271\u3046\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002\u4ee5\u4e0b\u306e\u4f8b\u3067\u306f\u3001\u6570\u5024\u3092 Decimal \u3068\u3057\u3066\u6271\u3046\u3053\u3068\u3067\u30010.1\u309210\u56de\u8db3\u3057\u305f\u5024\u304c\u6b63\u3057\u304f 1.0 \u306b\u306a\u3063\u3066\u3044\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "c286ab7ce5c7c8366425f85a0b9b3cb8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "1.0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "075503610c3fe4c46c30e5b5d144af6e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u3055\u3089\u306b\u5225\u306e\u4f8b\u3092\u898b\u3066\u307f\u307e\u3057\u3087\u3046\u3002Decimal() \u3092\u5229\u7528\u3059\u308b\u3053\u3068\u3067\u3001\u6709\u9650\u6841\u306e10\u9032\u6570\u3092\u6b63\u78ba\u306b\u6271\u3046\u3053\u3068\u304c\u3067\u304d\u307e\u3057\u305f\u304c\u3001Decimal \u30aa\u30d6\u30b8\u30a7\u30af\u30c8\u540c\u58eb\u306e\u6f14\u7b97\u306f\u6b63\u3057\u304f\u884c\u308f\u308c\u308b\u3068\u306f\u9650\u308a\u307e\u305b\u3093\u3002\u4f8b\u3048\u3070\u3001\u4ee5\u4e0b\u306e\u4f8b\u3067\u306f\u3001Decimal \u30aa\u30d6\u30b8\u30a7\u30af\u30c8\u540c\u58eb\u306e\u6f14\u7b97\u7d50\u679c\u304c\u6b63\u3057\u304f\u306a\u3044\u3053\u3068\u304c\u308f\u304b\u308a\u307e\u3059\uff08<marimo-tex class=\"arithmatex\">||(\\frac{1}{99}||)</marimo-tex> \u306e\u9006\u6570\u306f 99\uff09\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "2bc7f480121ca3e873eba4f17d140cbc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "98.99999999999999\n99.00000000000000000000000001\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "iLit",
+      "code_hash": "71e7ec0373607d122f780f70b4c5829a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u3053\u306e\u3088\u3046\u306a\u6574\u6570\u540c\u58eb\u306e\u6bd4\u3068\u3057\u3066\u8868\u73fe\u3067\u304d\u308b\u6709\u7406\u6570\u3092\u6271\u3046\u5834\u5408\u306f\u3001Fraction \u30aa\u30d6\u30b8\u30a7\u30af\u30c8\u3068\u3057\u3066\u6271\u3046\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002\u4ee5\u4e0b\u306e\u4f8b\u3067\u306f\u3001Fraction \u30aa\u30d6\u30b8\u30a7\u30af\u30c8\u306b\u3088\u3063\u3066\u6709\u7406\u6570\u306e\u6f14\u7b97\u304c\u6b63\u3057\u304f\u884c\u308f\u308c\u3066\u3044\u308b\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "f2bb2cfa3e4a5c4e2717c90c90203ba1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "3/10\n0.3\n99\n99.0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "8fe91549b11ee059afdef3190bf190c3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\u305d\u306e\u4ed6\u3001Python \u3067\u306f\u3001\u8907\u7d20\u6570\u3092\u6271\u3046\u305f\u3081\u306e\u6a5f\u80fd\u3082\u7528\u610f\u3055\u308c\u3066\u3044\u307e\u3059\u3002\u8907\u7d20\u6570\u306f\u3001\u5b9f\u6570\u3068\u865a\u6570\u306e\u7a4d\u3067\u8868\u3055\u308c\u307e\u3059\u3002\u4f8b\u3048\u3070\u3001\u4ee5\u4e0b\u306e\u3088\u3046\u306b\u3001\u8907\u7d20\u6570\u3092\u8868\u3059\u6587\u5b57\u5217\u3092 complex() \u95a2\u6570\u306b\u6e21\u3059\u3053\u3068\u3067\u3001\u8907\u7d20\u6570\u3092\u6271\u3046\u3053\u3068\u304c\u3067\u304d\u305f\u308a\u3057\u307e\u3059\u3002</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "84d55a7dee3696330386156f02c6a577",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "1.0 2.0\n3.0 4.0\n(4+6j)\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    }
+  ]
+}

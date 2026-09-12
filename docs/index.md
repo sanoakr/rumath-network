@@ -47,7 +47,7 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 ### 教材・ツール
 
 - [aiJudge（オンラインジャッジ）](https://judge.math.ryukoku.ac.jp/) — 演習課題の提出・自動採点
-- [Jupyter Notebook 教材（このリポジトリ）](https://github.com/sanoakr/rumath-network) — `jupyter.ipynb`, `python_tutorial.ipynb` など
+- [教材ノートブック（marimo）](notebooks.md) — ブラウザ内で Python を実行しながら学べる
 - [サンプルコード](https://github.com/sanoakr/rumath-network/tree/main/samples)
 - [hey](https://github.com/rakyll/hey) — HTTP 負荷テストツール（第 7 回で使用）
 
