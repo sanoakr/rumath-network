@@ -42,8 +42,9 @@
 
 この科目では、プログラミング課題の提示・提出・自動採点に **[aiJudge](https://judge.math.ryukoku.ac.jp/)** を利用します。
 
-1. アカウント情報（ユーザー名・初期パスワード）は講義中に配布します。
-2. [aiJudge](https://judge.math.ryukoku.ac.jp/) にログインして、**ex01 の問題ですべて満点を取って**ください。
+1. [aiJudge](https://judge.math.ryukoku.ac.jp/) を開き、**龍谷大学の全学認証（大学アカウント）でログイン**してください。
+   個別の ID・パスワードの配布はありません。
+2. ログインして、**ex01 の問題ですべて満点を取って**ください。
 3. 使い方は [aiJudge 学生向けガイド](https://sanoakr.github.io/aijudge/student/)（ログイン、提出、結果の読み方）を参照してください。
 
 !!! note "提出は何度でもできます"
