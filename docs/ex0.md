@@ -38,12 +38,7 @@ C 言語と同様に、Python プログラミングを行うためのテキス�
 
 - Visual Studio Code のインストール（中野）: [Windows](http://www602.math.ryukoku.ac.jp/Prog1/vscode-win.html) / [macOS](http://www602.math.ryukoku.ac.jp/Prog1/vscode-mac.html)
 
-## ノートブック環境の準備（任意） {: .exercise }
-
-この科目では、講義資料として Python コードをインタラクティブに実行できる**ノートブック**（marimo）を利用します。
-[教材ノートブック](notebooks.md) は科目 Web ページからブラウザで開くだけで実行できるので、**環境構築は不要**です。
-
-自分の PC 上でも動かしたい場合は、Python をインストールした後に `pip install marimo` で導入できます。
-VS Code でノートブック（Jupyter / marimo）を扱う方法は以下を参考にしてください。
-
-- [VS Code で Jupyter 環境を構築](setup/vscode-jupyter.md)
+!!! note "ノートブック環境の準備は不要です"
+    この科目では、講義資料として Python コードをインタラクティブに実行できる**ノートブック**（marimo）を利用しますが、
+    [教材ノートブック](notebooks.md) は科目 Web ページからブラウザで開くだけで実行できます。**環境構築は不要**です。
+    Jupyter は原則として使いません。

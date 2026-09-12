@@ -40,14 +40,19 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 
 - [Python のインストール](setup/python-install.md)
 - Visual Studio Code のインストール（中野）: [Windows](http://www602.math.ryukoku.ac.jp/Prog1/vscode-win.html) / [macOS](http://www602.math.ryukoku.ac.jp/Prog1/vscode-mac.html)
-- [VS Code で Jupyter 環境を構築](setup/vscode-jupyter.md)
+
+### ツール・サービス
+
+- [aiJudge（オンラインジャッジ）](https://judge.math.ryukoku.ac.jp/) — 演習課題の提出・自動採点
+    （[使い方ガイド](https://sanoakr.github.io/aijudge/student/)）
+- [PC 画面のスクリーンショットを撮る](setup/screenshot.md)
+- [PC のデスクトップ録画](setup/screen-recording.md)
+- [Visual Studio Code と（日本語）文字コード](setup/vscode-encoding.md)
 - [paiza ラーニングでクーポンコードを使う](setup/paiza-coupon.md)
 - [GitHub Copilot の有効化・無効化](setup/github-copilot.md)
 
 ### 教材・ツール
 
-- [aiJudge（オンラインジャッジ）](https://judge.math.ryukoku.ac.jp/) — 演習課題の提出・自動採点
-    （[使い方ガイド](https://sanoakr.github.io/aijudge/student/)）
 - [教材ノートブック（marimo）](notebooks.md) — ブラウザ内で Python を実行しながら学べる
 - [サンプルコード](https://github.com/sanoakr/rumath-network/tree/main/samples)
 - [hey](https://github.com/rakyll/hey) — HTTP 負荷テストツール（第 7 回で使用）
