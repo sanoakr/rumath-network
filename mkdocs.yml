@@ -1,0 +1,66 @@
+site_name: ネットワーク及び演習 2026
+site_url: https://sanoakr.github.io/rumath-network/
+repo_url: https://github.com/sanoakr/rumath-network
+repo_name: sanoakr/rumath-network
+edit_uri: ""
+copyright: 龍谷大学 先端理工学部 数理・情報科学課程
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: ダークモードに切替
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードに切替
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: ja
+
+# 各回のページは講義に合わせて順次追加する（未公開回はここに載せない）
+nav:
+  - ホーム: index.md
+  - 講義内容と演習課題:
+      - 事前課題 ex0: ex0.md
+      - 第1回 ex1 (09/18): ex1.md
