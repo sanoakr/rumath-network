@@ -3,6 +3,7 @@
 **後期 金曜 4・5 限 ＠ 1-608**（担当: 佐野 彰）
 
 [:fontawesome-brands-microsoft: Teams 科目チームを開く](https://teams.microsoft.com/l/team/19%3AhdLY9JyAjCPHaz7TKT_s27WitrXc9H3J61BfNoUVtEU1%40thread.tacv2/conversations?groupId=95ea40f3-3431-4f38-94f9-95bab4b39489&tenantId=23b65fdf-a4e3-4a19-b03d-12b1d57ad76e){ .md-button .md-button--primary }
+[:material-gavel: aiJudge（オンラインジャッジ）を開く](https://judge.math.ryukoku.ac.jp/){ .md-button }
 
 Python を使って、ソケット通信・HTTP・スレッドといったネットワークプログラミングの基礎を、
 実際にクライアント／サーバを書きながら学びます。
@@ -45,6 +46,7 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 
 ### 教材・ツール
 
+- [aiJudge（オンラインジャッジ）](https://judge.math.ryukoku.ac.jp/) — 演習課題の提出・自動採点
 - [Jupyter Notebook 教材（このリポジトリ）](https://github.com/sanoakr/rumath-network) — `jupyter.ipynb`, `python_tutorial.ipynb` など
 - [サンプルコード](https://github.com/sanoakr/rumath-network/tree/main/samples)
 - [hey](https://github.com/rakyll/hey) — HTTP 負荷テストツール（第 7 回で使用）
