@@ -39,9 +39,8 @@ jobs:
         run: |
           for nb in notebooks/*.py; do
             name=$(basename "$nb" .py)
+            # 開いた時点では実行せず、コードと説明だけを表示する（既定の auto_instantiate: false のまま）
             uv run marimo export html-wasm "$nb" -o "site/notebooks/$name" --mode edit
-            # edit モードは既定で自動実行がオフなので、開いた時点で実行されるようにする
-            sed -i 's/auto_instantiate\\": false/auto_instantiate\\": true/; s/"auto_instantiate": *false/"auto_instantiate": true/' "site/notebooks/$name/index.html"
           done
       - uses: actions/upload-pages-artifact@v3
         with:
