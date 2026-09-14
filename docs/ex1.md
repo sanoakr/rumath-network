@@ -1,22 +1,5 @@
 # ex1 — イントロと Python 入門
 
-| 実習回 | 日付 | 講義スライド |
-|:--:|:--:|---|
-| 1 | 2026/09/18 | [network01.pdf](slides/network01.pdf) |
-
-## 講義内容
-
-1. イントロ（科目概要の説明）
-    1. [スライド資料](slides/network01.pdf)
-    2. 生成 AI 利用についてのアンケート（講義中に案内します）
-2. ノートブック（marimo）とは
-    1. [ノートブックとは（ブラウザで開く）](https://sanoakr.github.io/rumath-network/notebooks/jupyter/)
-3. プログラミング言語 Python とは
-    1. [Python 入門（ブラウザで開く）](https://sanoakr.github.io/rumath-network/notebooks/python_tutorial/)
-4. Python 実行環境
-    1. [事前課題 ex0](ex0.md)
-    2. 対話形式とソースコードの実行（デモします）
-
 ## 演習課題
 
 ### 事前課題 0（完了していない人） {: .exercise }
