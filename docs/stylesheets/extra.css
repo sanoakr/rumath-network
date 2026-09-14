@@ -10,3 +10,9 @@ h2.exercise, h3.exercise {
 h2.exercise .headerlink, h3.exercise .headerlink {
   color: var(--md-primary-bg-color) !important;
 }
+
+/* 講義一覧表: スライド・演習ページの列をファイル名の途中で折り返さない */
+.md-typeset .schedule td:nth-child(3),
+.md-typeset .schedule td:nth-child(4) {
+  white-space: nowrap;
+}
