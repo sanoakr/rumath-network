@@ -17,8 +17,6 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 
 スライドと演習ページは講義の進行に合わせて順次公開します。
 
-<div class="schedule" markdown>
-
 | 回 | 日付 | スライド | 演習ページ | 内容（予定） |
 |:--:|:--:|:--:|:--:|---|
 | ex0 | — | — | [ex0](ex0.md) | （事前課題）Python プログラミング環境の準備 |
@@ -32,8 +30,6 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 | ex7 | 11/06 | 準備中 | 準備中 | hey と HTTP サーバの負荷テスト |
 | ex8 | 11/13 | — | 準備中 | まとめの小テスト ＠ 1-608 |
 | レポート | 11/13〜 | — | 準備中 | 任意提出のレポート課題（第7回以降に案内） |
-
-</div>
 
 ## 関連情報
 
@@ -58,14 +54,14 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 - [サンプルコード](https://github.com/sanoakr/rumath-network/tree/main/samples)
 - [hey](https://github.com/rakyll/hey) — HTTP 負荷テストツール（第 7 回で使用）
 
-### Python 3.13 ドキュメント
+### Python 3.14 ドキュメント
 
-- [Python 3.13 ドキュメント](https://docs.python.org/ja/3.13/index.html)
-    - [Python のセットアップと利用](https://docs.python.org/ja/3.13/using/index.html)
-    - [Python チュートリアル](https://docs.python.org/ja/3.13/tutorial/index.html)
-    - [組み込み関数](https://docs.python.org/ja/3.13/library/functions.html)
-    - [sys --- システムパラメータと関数](https://docs.python.org/ja/3.13/library/sys.html)
-    - [socket --- 低水準ネットワークインターフェース](https://docs.python.org/ja/3.13/library/socket.html)
-    - [http.server --- HTTP サーバ](https://docs.python.org/ja/3.13/library/http.server.html)
-    - [threading --- スレッドベースの並列処理](https://docs.python.org/ja/3.13/library/threading.html)
-    - [turtle --- タートルグラフィックス](https://docs.python.org/ja/3.13/library/turtle.html)
+- [Python 3.14 ドキュメント](https://docs.python.org/ja/3.14/index.html)
+    - [Python のセットアップと利用](https://docs.python.org/ja/3.14/using/index.html)
+    - [Python チュートリアル](https://docs.python.org/ja/3.14/tutorial/index.html)
+    - [組み込み関数](https://docs.python.org/ja/3.14/builtins/functions.html)
+    - [sys --- システムパラメータと関数](https://docs.python.org/ja/3.14/library/sys.html)
+    - [socket --- 低水準ネットワークインターフェース](https://docs.python.org/ja/3.14/library/socket.html)
+    - [http.server --- HTTP サーバ](https://docs.python.org/ja/3.14/library/http.server.html)
+    - [threading --- スレッドベースの並列処理](https://docs.python.org/ja/3.14/library/threading.html)
+    - [turtle --- タートルグラフィックス](https://docs.python.org/ja/3.14/library/turtle.html)

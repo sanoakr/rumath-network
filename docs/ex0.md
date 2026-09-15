@@ -18,9 +18,9 @@ Python 環境を構築済みの場合は、それをそのまま利用して構�
 
 ```console
 $ python --version
-Python 3.13.5
+Python 3.14.7
 $ python -V
-Python 3.13.5
+Python 3.14.7
 ```
 
 Python は、WSL や Microsoft Store、Anaconda や Homebrew など様々な方法でインストールが可能です。
