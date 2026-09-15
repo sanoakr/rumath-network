@@ -18,7 +18,7 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    # Python の数式処理（数式処理 Sympy モジュール)
+    # **Python の数式処理（数式処理 Sympy モジュール)**
 
     Python には Mathematica や Maple などの数式処理ソフトウェアと同様に、数式処理を行うためのモジュール Sympy が用意されています。Sympy モジュールを使うと、数式を Python のコードで表現し、数式として微分・積分などの計算を行うことができます。
     """)

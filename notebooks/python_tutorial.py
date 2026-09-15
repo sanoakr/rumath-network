@@ -14,8 +14,8 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    # Python 入門
-    ## はじめに
+    # **Python 入門**
+    ## **はじめに**
     この科目ではネットワークプログラミングのための言語としてPythonを利用します。Pythonは、様々なプログラミング言語の中でも比較的簡単に学ぶことができる言語です。このノートブックでは、Pythonの特徴を学びます。
 
     Pythonの特徴の一つとして、豊富な標準ライブラリ（C言語の stdio.h のような言語の標準仕様に含まれている関数ライブラリ）を持っていることが挙げられます。標準ライブラリには、数値計算やタートルグラフィクスなど、さまざまな機能が含まれています。しかし、この科目で学ぶ内容は Pythonの基本的な文法とネットワークプログラミングに必要な最低限の内容に限定します。
@@ -27,16 +27,16 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## Python の位置付け
+    ## **Python の位置付け**
     プログラミング言語には様々なものがありますが、Pythonは現在もっとも人気のあるプログラミング言語の一つです。
 
-    * [RedMonk Top 20 Languages Over Time: January 2025](https://redmonk.com/rstephens/2025/06/18/top20-jan2025/)（世界でどのくらい使われている？GithubとStackOverflowの質問数から算出）
+    * [RedMonk Top 20 Languages Over Time: January 2026](https://redmonk.com/rstephens/2026/04/14/top20-jan2026/)（世界でどのくらい使われている？GithubとStackOverflowの質問数から算出）
 
-        1.JavaScript, 2.**Python**, 3.Java, 4.PHP, 5.C#
+        1.JavaScript, 2.**Python**, 3.Java, 4.PHP, 4.C#（同順位）
 
-    * [PYPL PopularitY of Programming Language: Sept 2025](https://pypl.github.io/PYPL.html)（世界でどのくらい使われている？Google検索数から算出）
+    * [PYPL PopularitY of Programming Language: Sept 2026](https://pypl.github.io/PYPL.html)（世界でどのくらい使われている？Google検索数から算出）
 
-        1.**Python 29.69%(+0.2%)**, 2.Java 14.72%(-0.7%), 3.C/C++( 9.21%(+2.5%), 4.JavaScript 6.78%(-1.4%), 5.R 5.26$(-0.6%)
+        1.**Python 52.08%(+22.7%)**, 2.Java 13.34%(-0.7%), 3.C/C++ 7.99%(-3.5%), 4.R 3.83%(-2.1%), 5.JavaScript 3.28%(-3.1%)
 
     * [「実際に仕事で使われているプログラミング言語」ランキング」](https://qiita.com/mmake/items/68cc8f07331e0ef8ce50)（日本国内中心にいろんな視点からのまとめ）
     """)
@@ -46,7 +46,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## Python の特徴
+    ## **Python の特徴**
     Python の特徴を、みなさんが学んできたC言語と比較しながら紹介したいと思います。ここでは Pythonの特徴として、
     1. インタプリタ型言語である
     1. 動的な型付け言語である
@@ -61,7 +61,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ### 1. インタプリタ言語である
+    ### **1. インタプリタ言語である**
     C言語ではプログラムを実行する前に「コンパイル」によってソースコードを機械語に変換する必要がありました。この変換を行うプログラムをコンパイラと呼びます。コンパイラは、プログラムを機械語に変換する前に、プログラムの文法をまとめてチェックし、プログラムが正しければ機械語に変換してプログラムの実行ファイルを生成します。
     """)
     return
@@ -96,7 +96,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ### 2. 動的な型付け言語である
+    ### **2. 動的な型付け言語である**
     C言語では、変数には必ず型を宣言する必要がありました。変数の型を宣言することで、その変数がどのような値を扱うことができるかをコンパイラに伝えます。したがって、変数の型を宣言するとその変数には指定した型をもつ値しか代入することができません。変数の型を宣言することを変数の型付けと呼び、C言語のように変更できない形で変数型を宣言する言語を **「静的な型付け言語」** と呼びます。
 
     ```c
@@ -161,7 +161,7 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ### 3. インデントによるブロック構文をもつ
+    ### **3. インデントによるブロック構文をもつ**
     C言語では、if文やfor文などのブロック構文を表現するために、波括弧 `{` と `}` を使います。波括弧は、ブロック構文の開始と終了を表していました。
 
     ```c
