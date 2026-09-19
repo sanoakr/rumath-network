@@ -3,9 +3,10 @@ import socket
 
 port = 50080
 file = "server.html"
-cType = b"Content-Type: text/html; charset=utf-8\n\n"
+# HTTP のヘッダ行は CRLF（\r\n）で終える（RFC 9112 §2.2）
+cType = b"Content-Type: text/html; charset=utf-8\r\n"
 htHead = b"<html><body>"
-htTail = b"</html></body>"
+htTail = b"</body></html>"
 # サーバホスト名（'' とすると実行マシン上の接続可能な全てのホスト名）
 HOST = ""
 print(f"port={port}, file={file}")
@@ -21,8 +22,15 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             print("Connected by,", addr)
             data = b""
             while True:
-                data += conn.recv(1024)
-                if b"\n\n" or "\n\r\n\r" in data:
+                chunk = conn.recv(1024)
+                # 空行が来ないまま相手が接続を閉じた場合に抜ける
+                # （これが無いと無限ループになる）
+                if not chunk:
+                    break
+                data += chunk
+                # ヘッダの終わりは空行。RFC では CRLF だが、LF だけを送ってくる
+                # クライアントもあるので、受け取る側は両方を認める
+                if b"\r\n\r\n" in data or b"\n\n" in data:
                     break
             # 改行しない
             print("Received:", data.decode(), end="")
@@ -30,11 +38,13 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             rData = b"HTTP/1.1 "
             if data.startswith(b"GET "):
                 try:
-                    with open(file) as f:
-                        rData += b"200 OK\n" + cType
-                        rData += f.read().encode() + b"\n"
+                    # テキストモードで開くと OS によって改行が変換されるので "rb" で読む
+                    with open(file, "rb") as f:
+                        # ステータス行・ヘッダ・空行・本文の順に組み立てる
+                        rData += b"200 OK\r\n" + cType + b"\r\n"
+                        rData += f.read()
                 except OSError:
-                    rData += b"404 Not Found\n" + cType
+                    rData += b"404 Not Found\r\n" + cType + b"\r\n"
                     rData += htHead + file.encode() + b" is not found" + htTail
 
             conn.sendall(rData)
