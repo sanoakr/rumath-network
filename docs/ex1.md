@@ -10,9 +10,10 @@
 
 1. [paiza ラーニングでクーポンコードを使う](setup/paiza-coupon.md)
    を参考にして、[paiza ラーニング](https://paiza.jp/works/) の利用準備をします。
-2. [講座（全 15 チャプター）](https://paiza.jp/works/python/trial) のすべての演習問題に合格すると得られる
+2. [講座（全 17 チャプター）](https://paiza.jp/works/python/trial) のすべての演習問題に合格すると得られる
    **「認定証」の画面キャプチャ**を、**aiJudge の課題「認定証提出（paiza「Python 体験編 1: Python をはじめよう」）」** に提出してください。
 3. 認定証に表示されるニックネーム（下図の `akrsn` の部分）には、**必ず自身の学籍番号を含めて**ください。
+   ニックネームは画面右上のメニューの「アカウント設定」から指定できます。
 4. 合格後の認定証は [講座のレッスン一覧](https://paiza.jp/works/python/trial) からいつでも確認できます。
 
 #### 課題の提出には aiJudge を使います
