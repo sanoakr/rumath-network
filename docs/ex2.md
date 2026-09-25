@@ -12,9 +12,9 @@
 <!-- aijudge:end -->
 
 !!! note "生成 AI・Web 検索の利用について"
-    - 生成 AI（ChatGPT・GitHub Copilot などの補完機能を含む）を利用して構いません。
-    - Web 検索や、これまでの演習で書いたコードの再利用も構いません。
-
+    - 小テストでは生成 AI（ChatGPT・GitHub Copilot などの補完機能を含む）は**利用できません**。
+    - Python の構文確認などを想定した Web 検索や、これまでの演習で書いたコードの再利用は構いません。
+    
 ## 演習課題 {: .exercise }
 
 [「新・Python入門編」](https://paiza.jp/works/python/new-primer) に取り組んで各レッスンの認定証を取得してください。
