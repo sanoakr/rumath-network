@@ -69,6 +69,7 @@ nav:
   - 講義内容と演習課題:
       - 事前課題 ex0: ex0.md
       - 第1回 ex1 (09/18): ex1.md
+      - 第2回 ex2 (09/25): ex2.md
   - 環境構築:
       - Python のインストール: setup/python-install.md
   - ツール・サービス:
