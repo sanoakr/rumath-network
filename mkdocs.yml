@@ -74,7 +74,6 @@ nav:
       - Python のインストール: setup/python-install.md
   - ツール・サービス:
       - PC 画面のスクリーンショットを撮る: setup/screenshot.md
-      - PC のデスクトップ録画: setup/screen-recording.md
       - Visual Studio Code と（日本語）文字コード: setup/vscode-encoding.md
       - paiza ラーニングでクーポンコードを使う: setup/paiza-coupon.md
       - GitHub Copilot の有効化・無効化: setup/github-copilot.md
