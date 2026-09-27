@@ -14,5 +14,12 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, port))
     s.sendall(req)
     print('Send', repr(req.decode()))
-    data = s.recv(1024)
+    # 1 回の recv() で応答全体が届くとは限らないので、
+    # サーバが接続を閉じる（recv() が b'' を返す）まで読み続ける
+    data = b""
+    while True:
+        chunk = s.recv(1024)
+        if not chunk:
+            break
+        data += chunk
     print('Received', data.decode())
