@@ -43,7 +43,6 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 - [aiJudge（オンラインジャッジ）](https://judge.math.ryukoku.ac.jp/) — 演習課題の提出・自動採点
     （[使い方ガイド](https://sanoakr.github.io/aijudge/student/)）
 - [PC 画面のスクリーンショットを撮る](setup/screenshot.md)
-- [PC のデスクトップ録画](setup/screen-recording.md)
 - [Visual Studio Code と（日本語）文字コード](setup/vscode-encoding.md)
 - [paiza ラーニングでクーポンコードを使う](setup/paiza-coupon.md)
 - [GitHub Copilot の有効化・無効化](setup/github-copilot.md)
