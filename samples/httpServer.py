@@ -46,6 +46,11 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 except OSError:
                     rData += b"404 Not Found\r\n" + cType + b"\r\n"
                     rData += htHead + file.encode() + b" is not found" + htTail
+            else:
+                # GET 以外のメソッドには対応していないことを 405 で返す
+                # （Allow ヘッダで使えるメソッドを示す。RFC 9110 §15.5.6）
+                rData += b"405 Method Not Allowed\r\n" + b"Allow: GET\r\n" + cType + b"\r\n"
+                rData += htHead + b"Method Not Allowed" + htTail
 
             conn.sendall(rData)
             print("Sent:", rData.decode())
