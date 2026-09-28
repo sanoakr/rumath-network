@@ -22,7 +22,7 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 | ex0 | — | — | [ex0](ex0.md) | （事前課題）Python プログラミング環境の準備 |
 | ex1 | 09/18 | [network01.pdf](slides/network01.pdf) | [ex1](ex1.md) | イントロと Python 入門 |
 | ex2 | 09/25 | [network02.pdf](slides/network02.pdf) | [ex2](ex2.md) | 計算機ネットワークの基礎、Python のデータ型 |
-| ex3 | 10/02 | 準備中 | 準備中 | echo クライアント・サーバ、Python の関数 |
+| ex3 | 10/02 | [network03.pdf](slides/network03.pdf) | 準備中 | echo クライアント・サーバ、Python の関数 |
 | ex4 | 10/09 | 準備中 | 準備中 | echoClient.py と echoServer.py を読む |
 | ex5 | 10/16 | 準備中 | 準備中 | HTTP プロトコルと httpServer.py |
 | ex6 | 10/23 | 準備中 | 準備中 | スレッドとネットワーク通信の暗号化 |
