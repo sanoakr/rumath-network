@@ -5,13 +5,12 @@
 [:fontawesome-brands-microsoft: Teams 科目チームを開く](https://teams.microsoft.com/l/team/19%3AhdLY9JyAjCPHaz7TKT_s27WitrXc9H3J61BfNoUVtEU1%40thread.tacv2/conversations?groupId=95ea40f3-3431-4f38-94f9-95bab4b39489&tenantId=23b65fdf-a4e3-4a19-b03d-12b1d57ad76e){ .md-button .md-button--primary }
 [:material-gavel: aiJudge（オンラインジャッジ）を開く](https://judge.math.ryukoku.ac.jp/){ .md-button }
 
-Python を使って、ソケット通信・HTTP・スレッドといったネットワークプログラミングの基礎を、
-実際にクライアント／サーバを書きながら学びます。
+この科目では、Python でクライアントとサーバのプログラムを実際に書きながら、ソケット通信・HTTP・スレッドといったネットワークプログラミングの基礎を学びます。
 
 !!! info "この科目での質問方法"
-    詳しくは [この科目での質問方法](how-to-ask.md) を読んでください。
     質問は [Teams の科目チーム](https://teams.microsoft.com/l/team/19%3AhdLY9JyAjCPHaz7TKT_s27WitrXc9H3J61BfNoUVtEU1%40thread.tacv2/conversations?groupId=95ea40f3-3431-4f38-94f9-95bab4b39489&tenantId=23b65fdf-a4e3-4a19-b03d-12b1d57ad76e)の **「★ 質問用チャネル」** に投稿してください。
-    他の受講者にも役立つ質問・回答は共有します。
+    質問の方法は [この科目での質問方法](how-to-ask.md) で詳しく説明しています。
+    他の受講者にも役立つ質問と回答は共有します。
 
 ## 講義内容と演習課題
 
@@ -29,7 +28,7 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 | — | 10/30 |  |  | お休み（龍谷祭・全学休講） |
 | ex7 | 11/06 | 準備中 | 準備中 | hey と HTTP サーバの負荷テスト |
 | ex8 | 11/13 | — | 準備中 | まとめの小テスト ＠ 1-608 |
-| レポート | 11/13〜 | — | 準備中 | 任意提出のレポート課題（第7回以降に案内） |
+| レポート | 11/13〜 | — | 準備中 | 任意提出のレポート課題（第 8 回以降に案内） |
 
 ## 関連情報
 
@@ -49,7 +48,7 @@ Python を使って、ソケット通信・HTTP・スレッドといったネッ
 
 ### 教材・ツール
 
-- [教材ノートブック（marimo）](notebooks.md) — ブラウザ内で Python を実行しながら学べる
+- [教材ノートブック（marimo）](notebooks.md) — ブラウザ内で Python を実行しながら学べる教材
 - [サンプルコード](https://github.com/sanoakr/rumath-network/tree/main/samples)
 - [hey](https://github.com/rakyll/hey) — HTTP 負荷テストツール（第 7 回で使用）
 
