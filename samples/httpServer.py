@@ -15,9 +15,16 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     # setsockopt() については第5回ページのメモを参照
     s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, True)
     s.bind((HOST, port))
+    # accept() の待ちを 1 秒で打ち切る。Windows では accept() で待っている間は
+    # Ctrl-C が効かないので、1 秒ごとに戻ってきて Ctrl-C を受け付けられるようにする
+    s.settimeout(1.0)
     while True:
         s.listen(1)
-        conn, addr = s.accept()
+        try:
+            conn, addr = s.accept()
+        except socket.timeout:
+            # 1 秒間だれも接続してこなかった。もう一度待つ
+            continue
         with conn:
             print("Connected by,", addr)
             data = b""
