@@ -1,6 +1,6 @@
 # 教材ノートブック
 
-Python の教材は **marimo** ノートブックです。リンクを開くと、ブラウザ内で Python が動きます（インストール不要。初回は読み込みに少し時間がかかります）。
+この科目の Python の教材は、marimo のノートブックです。リンクを開くと、ブラウザ内で Python のコードを実行できます。インストールは不要ですが、初回は読み込みに少し時間がかかります。
 セルを書き換えて実行しながら読み進めてください。
 
 | ノートブック | 内容 | 使う回 |
@@ -14,14 +14,14 @@ Python の教材は **marimo** ノートブックです。リンクを開くと�
 
 ## 自分の PC で動かす
 
-ノートブックはふつうの Python ファイル（`.py`）です。ソースは [GitHub の `notebooks/`](https://github.com/sanoakr/rumath-network/tree/main/notebooks) にあります。
+ノートブックは通常の Python ファイル（`.py`）です。ソースは [GitHub の `notebooks/`](https://github.com/sanoakr/rumath-network/tree/main/notebooks) にあります。
 
 ```
 pip install marimo
 marimo edit python_tutorial.py
 ```
 
-VS Code を使う場合は拡張機能「marimo」を入れると、VS Code 内でノートブックを開けます。
+VS Code では、拡張機能「marimo」をインストールすると、VS Code 内でノートブックを開けます。
 
 !!! note "Jupyter 版"
-    以前の Jupyter Notebook（`.ipynb`）も [リポジトリ直下](https://github.com/sanoakr/rumath-network) に残してあります。Google Colab で開きたい場合はそちらを使ってください。
+    以前の Jupyter Notebook（`.ipynb`）版も [リポジトリ直下](https://github.com/sanoakr/rumath-network) に残してあります。Google Colab で開きたい場合は、そちらを使ってください。
