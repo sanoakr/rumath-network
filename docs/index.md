@@ -24,7 +24,7 @@
 | ex3 | 10/02 | [network03.pdf](slides/network03.pdf) | [ex3](ex3.md) | echo クライアント・サーバ、Python の関数 |
 | ex4 | 10/09 | [network04.pdf](slides/network04.pdf) | [ex4](ex4.md) | echoClient.py と echoServer.py を読む |
 | ex5 | 10/16 | [network05.pdf](slides/network05.pdf) | [ex5](ex5.md) | HTTP プロトコルと httpServer.py |
-| ex6 | 10/23 | [network06.pdf](slides/network06.pdf) | 準備中 | スレッドとネットワーク通信の暗号化 |
+| ex6 | 10/23 | [network06.pdf](slides/network06.pdf) | [ex6](ex6.md) | スレッドとネットワーク通信の暗号化 |
 | — | 10/30 |  |  | お休み（龍谷祭・全学休講） |
 | ex7 | 11/06 | 準備中 | 準備中 | hey と HTTP サーバの負荷テスト |
 | ex8 | 11/13 | — | 準備中 | まとめの小テスト ＠ 1-608 |
