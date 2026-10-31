@@ -26,7 +26,7 @@
 | ex5 | 10/16 | [network05.pdf](slides/network05.pdf) | [ex5](ex5.md) | HTTP プロトコルと httpServer.py |
 | ex6 | 10/23 | [network06.pdf](slides/network06.pdf) | [ex6](ex6.md) | スレッドとネットワーク通信の暗号化 |
 | — | 10/30 |  |  | お休み（龍谷祭・全学休講） |
-| ex7 | 11/06 | [network07.pdf](slides/network07.pdf) | 準備中 | hey と HTTP サーバの負荷テスト |
+| ex7 | 11/06 | [network07.pdf](slides/network07.pdf) | [ex7](ex7.md) | hey と HTTP サーバの負荷テスト |
 | ex8 | 11/13 | — | [ex8](ex8.md) | まとめの小テスト ＠ 1-608 |
 | レポート | 11/13〜 | — | [レポート](report.md) | 任意提出のレポート課題（第 8 回以降に案内） |
 
