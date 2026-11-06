@@ -37,7 +37,7 @@
 
     1. 自分の PC で動かしている `httpServer.py` — `http://127.0.0.1:50080/server.html`
     2. 自分が管理しているサーバ — 自分で借りた VPS、自分の Raspberry Pi、同じ LAN 内の自分の PC など
-    3. この科目で許可された学内サーバ — `https://www.math.ryukoku.ac.jp/` と `https://whale2.math.ryukoku.ac.jp/` の 2 つのみ
+    3. この科目で許可された学内サーバ — `https://whale2.math.ryukoku.ac.jp/` のみ
 
     大学の公開サイト（`www.ryukoku.ac.jp` など）、企業・公共機関・他人のサイト、学内の他の実習室や研究室のマシンは**すべて対象外**です。
 
